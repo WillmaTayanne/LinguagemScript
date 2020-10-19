@@ -1,0 +1,49 @@
+<html>
+    <head>
+
+        <script type="text/javascript" src="media.js"></script>
+    </head>
+    <body>
+        
+
+        <h1> Window - Menu </h1>
+        <script> 
+
+        alert(" Menu Opções:  a- Mostre a largura da janela  | b- Exiba a altura da janela | c- Redimensione a janela  | d- Feche a janela ");
+
+        const letra = window.prompt("digite a opção do menu: ");
+
+        switch (letra) {
+          case 'a': 
+            const width = window.innerWidth;
+            document.write("Altura: " + width);
+          break;
+
+          case 'b': 
+            const height = window.innerHeight;
+            document.write("Largura: " + height);
+            break;
+
+          case 'c': 
+          function dimensionar() {
+            // Comprimento, altura
+            window.resizeTo(400, 300);
+            }
+            // monitora o evento click() do mouse
+            document.onclick = dimensionar;
+            
+          case 'd':
+            window.close();
+
+            break;
+        }
+
+
+
+
+        
+        </script> 
+
+        
+    </body>
+</html>
