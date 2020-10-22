@@ -1,7 +1,7 @@
 <html>
     <head>
 
-        <script type="text/javascript" src="media.js"></script>
+        <script type="text/javascript" src="main.js"></script>
     </head>
     <body>
         
@@ -9,9 +9,12 @@
         <h1> Window - Menu </h1>
         <script> 
 
-        alert(" Menu Opções:  a- Mostre a largura da janela  | b- Exiba a altura da janela | c- Redimensione a janela  | d- Feche a janela ");
-
-        const letra = window.prompt("digite a opção do menu: ");
+        let letra = window.prompt(`Digite uma das Seguinte Opções:
+          a- Mostre a largura da janela
+          b- Exiba a altura da janela
+          c- Redimensione a janela 
+          d- Feche a janela`
+        );
 
         switch (letra) {
           case 'a': 
@@ -25,12 +28,8 @@
             break;
 
           case 'c': 
-          function dimensionar() {
-            // Comprimento, altura
-            window.resizeTo(400, 300);
-            }
-            // monitora o evento click() do mouse
-            document.onclick = dimensionar;
+            redimensionarJanela();
+          break;
             
           case 'd':
             window.close();

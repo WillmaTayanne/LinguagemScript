@@ -25,5 +25,10 @@ mudaBackground = (caracter) => {
     else {
         muda.style.backgroundColor = "fdfcff";
     }
+}
 
+redimensionarJanela = () => {
+    let width = window.prompt('Digite a Nova Largura: ');
+    let height = window.prompt('Digite a Nova Altura: ');
+    window.open(window.location.href, "", `width=${width}, height=${height}`); window.close();
 }
