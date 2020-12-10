@@ -1,0 +1,41 @@
+body {
+    background-color: #eee;
+    font-family: Arial, sans-serif;
+    padding-bottom: 4rem;
+    margin: 100px;
+}
+
+h1 {
+
+        text-align: center;
+        font-size: 3rem;
+        color: #1565C0;
+        padding-right: 2rem
+
+}
+
+
+.timeline {
+    display: flex;
+    position: relative;
+    background-color: #fff;
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+
+
+.post h2 {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: #1565C0;
+}
+
+.post:before {
+    color: #1565C0;
+    position: absolute;
+    top: 3rem;
+    left: 2rem;
+    margin-right: 1rem;
+    font-size: 3.5rem
+}
